@@ -6,7 +6,6 @@ export const container = {
 
 export const menu = {
   alignSelf : 'flex-start',
-  marginTop: 10,
   marginLeft: 10
 }
 

@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
         ...container,
     },
     menu: {
-        ...menu
+        ...menu,
+        marginTop: Platform.OS === 'ios' ? 40 : 10,
     },
     content : {
         ...content

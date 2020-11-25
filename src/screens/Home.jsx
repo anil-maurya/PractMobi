@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Platform } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons'
 
 import { container, menu, content } from '../styles';
@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
         ...container,
     },
     menu: {
-        ...menu
+        ...menu,
+        marginTop: Platform.OS === 'ios' ? 40 : 10,
     },
     content : {
         ...content
