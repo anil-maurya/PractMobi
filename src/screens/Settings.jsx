@@ -10,7 +10,8 @@ function Settings({navigation}){
            <View style={styles.menu}>
                 <Icon
                     onPress={()=>navigation.openDrawer()} 
-                    name="ios-menu" size={28} 
+                    name="ios-menu" 
+                    size={28} 
                     color="black" 
                 />
            </View>
@@ -32,6 +33,6 @@ const styles = StyleSheet.create({
     content : {
         ...content
     }
-})
+});
 
 export default Settings;
