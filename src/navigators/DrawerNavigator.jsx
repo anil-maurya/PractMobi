@@ -8,7 +8,6 @@ import TabNavigator from '../navigators/TabNavigator';
 const Drawer = createDrawerNavigator()
 
 
-
 function DrawerNavigation(){
 
     return(

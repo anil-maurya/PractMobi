@@ -1,12 +1,22 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons'
 
-import { container } from '../styles';
+import { container, menu, content } from '../styles';
 
-function Settings(){
+function Settings({navigation}){
     return( 
        <View style={styles.container}>
-            <Text>Settings Screen</Text>
+           <View style={styles.menu}>
+                <Icon
+                    onPress={()=>navigation.openDrawer()} 
+                    name="ios-menu" size={28} 
+                    color="black" 
+                />
+           </View>
+           <View style={styles.content}>
+                <Text>Settings Screen</Text>
+           </View>
         </View>
     );
 }
@@ -14,6 +24,12 @@ function Settings(){
 const styles = StyleSheet.create({
     container: {
         ...container,
+    },
+    menu: {
+        ...menu
+    },
+    content : {
+        ...content
     }
 })
 
