@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import Profile from '../screens/Profile';
 import TabNavigator from '../navigators/TabNavigator';
 
-const Drawer = createDrawerNavigator()
+const Drawer = createDrawerNavigator();
 
 
 function DrawerNavigation(){
