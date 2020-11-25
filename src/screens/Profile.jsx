@@ -1,12 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 import { container } from '../styles';
 
-function Profile(){
+function Profile({navigation}){
     return( 
        <View style={styles.container}>
             <Text>Profile Screen</Text>
+            <Button title='Go Back' onPress={()=>navigation.navigate('Home', {screen: 'Home'})}/>
         </View>
     );
 }
