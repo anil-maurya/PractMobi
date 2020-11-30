@@ -3,7 +3,6 @@ import {
   StyleSheet, Text, View, Platform,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { RNCamera } from 'react-native-camera';
 import { container, menu, content } from '../styles';
 
 function Home({ navigation }) {
@@ -17,17 +16,9 @@ function Home({ navigation }) {
           color="black"
         />
       </View>
-      <View style={styles.content}>
-        <RNCamera 
-          style={{
-            flex: 1,
-            height: '100%',
-            width: '100%'
-          }}
-        ></RNCamera>
+     
       </View>
-    </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
